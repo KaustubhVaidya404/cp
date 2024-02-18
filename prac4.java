@@ -47,15 +47,65 @@ class Display {
   }
 
   static void threePrint(int size){
+	for(int i=0; i<size; i++){
+		hBar();
+	}
+	System.out.println();
+	for(int i=0; i<size; i++){
+		voidSpace();
+		vBar();
+	}
+	for(int i=0; i<size; i++){
+		hBar();
+	}
+	System.out.println();
+	for(int i=0; i<size; i++){
+		voidSpace();
+		vBar();
+	}
+	for(int i=0; i<size; i++){
+		hBar();
+	}
+	System.out.println();
 
   }
 
   static void fourPrint(int size){
-
+	for(int i=0; i<size; i++){
+		System.out.print("|");
+		voidSpace();
+		vBar();
+	}
+	for(int i=0; i<size; i++){
+		hBar();
+	}
+	System.out.println();
+	for(int i=0; i<size; i++){
+		voidSpace();
+		vBar();
+	}
   }
 
   static void fivePrint(int size){
-
+	for(int i=0; i<size; i++){
+		hBar();
+	}
+	System.out.println();
+	for(int i=0; i<size; i++){
+		vBar();
+	}
+	for(int i=0; i<size; i++){
+		hBar();
+	}
+	System.out.println();
+	for(int i=0; i<size; i++){
+		voidSpace();
+		vBar();
+	}
+	for(int i=0; i<size; i++){
+		hBar();
+	}
+	System.out.println();
   }
 
   public static void main(String[] args) {
