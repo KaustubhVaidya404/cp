@@ -110,41 +110,56 @@ class Display {
 
   public static void main(String[] args) {
     
-    //Taking input for size of digits
+   String choice = "y"; 
+
+    do{
+
+      //Taking input for size of digits
     System.out.println("Enter the size of digits to print");
-    Scanner sc1 = new Scanner(System.in);
-    int digitsize = sc1.nextInt();
+    Scanner sc = new Scanner(System.in);
+    int digitsize = sc.nextInt();
     
     //Taking input for digit
     System.out.println("Enter the digit to print");
-    Scanner sc2 = new Scanner(System.in);
-    int digitToPrint = sc2.nextInt();
+    int digitToPrint = sc.nextInt();
+   
     
+
     switch (digitToPrint) {
       case 1:
         onePrint(digitsize);
+        System.out.println("Do you want to continue? (y/n)");
+        choice = sc.next();
         break;
       
       case 2:
         twoPrint(digitsize);
+        System.out.println("Do you want to continue? (y/n)");
+        choice = sc.next();
         break;
       
       case 3:
         threePrint(digitsize);
+        System.out.println("Do you want to continue? (y/n)");
+        choice = sc.next();
         break;
 
       case 4:
         fourPrint(digitsize);
+        System.out.println("Do you want to continue? (y/n)");
+        choice = sc.next();
         break;
 
       case 5:
         fivePrint(digitsize);
+        System.out.println("Do you want to continue? (y/n)");
+        choice = sc.next();
         break;
 
       default:
         break;
-    }
-
+      }
+    }while(choice.equals("y"));
   }
 }
 
